@@ -34,7 +34,9 @@ const FakeComponent = () => {
         ) : null}
         {loading ? <h1>Loading ....</h1> : null}
         {fakeDataCount.length
-          ? fakeDataCount.map(() => <DisplayFakeData />)
+          ? fakeDataCount.map((singleFakeData, index) => (
+              <DisplayFakeData key={`${Math.random()}-${index}`} />
+            ))
           : null}
       </div>
     </div>

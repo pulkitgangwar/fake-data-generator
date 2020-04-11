@@ -7,10 +7,11 @@ const Form = ({ getFakeData }) => {
     <form className="form" onSubmit={(e) => getFakeData(e, count)}>
       <input
         className="form__input form__input--count"
-        type="text"
+        type="number"
         value={count}
         name="count"
         onChange={(e) => setCount(e.target.value)}
+        placeholder="Enter The Count For Data"
       />
       <button type="submit" className="form__btn">
         Get Data
