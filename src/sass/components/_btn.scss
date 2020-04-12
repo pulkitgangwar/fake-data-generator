@@ -1,0 +1,29 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.5rem 3rem;
+    background-color: $surface-color-dark;
+    color: $surface-color-light;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &--primary {
+    &,
+    &:link,
+    &:visited {
+      background-color: $primary-color !important;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+}

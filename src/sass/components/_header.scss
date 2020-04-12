@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  height: 90vh;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.2;
+
+  @media only screen and (max-width:$bp-large){
+    padding:5rem;
+  }
+
+  &__paragraph {
+    padding-top: 2rem;
+  }
+
+  &__btn--wrapper {
+    padding-top: 2rem;
+  }
+}
