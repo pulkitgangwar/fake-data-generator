@@ -24,10 +24,19 @@ const FakeComponent = () => {
   };
 
   return (
-    <div>
+    <>
       <Form getFakeData={getFakeData} />
       <div>
-        {error && !loading ? (
+        {loading ? (
+          <h1>Loading ...</h1>
+        ) : error && !loading ? (
+          <h1>Problem Please Refresh Data</h1>
+        ) : fakeDataCount.length ? (
+          fakeDataCount.map((singleFakeData, index) => (
+            <DisplayFakeData key={`${Math.random()}-${index}`} />
+          ))
+        ) : null}
+        {/* {error && !loading ? (
           <h1>
             Unable to Generate Data Please Refresh the Browser and Try Again !
           </h1>
@@ -37,9 +46,9 @@ const FakeComponent = () => {
           ? fakeDataCount.map((singleFakeData, index) => (
               <DisplayFakeData key={`${Math.random()}-${index}`} />
             ))
-          : null}
+          : null} */}
       </div>
-    </div>
+    </>
   );
 };
 

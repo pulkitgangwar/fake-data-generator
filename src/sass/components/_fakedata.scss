@@ -1,0 +1,18 @@
+.fakedata {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-auto-rows: min-content;
+  grid-gap: 2rem;
+  padding: 5rem;
+  color: $text-color-light;
+
+  &__box {
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}

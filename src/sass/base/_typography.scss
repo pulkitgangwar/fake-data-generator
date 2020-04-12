@@ -25,6 +25,11 @@
   }
 }
 
+.paragraph-secondary {
+  font-size: 1.2rem;
+  font-weight: regular;
+}
+
 .custom-span {
   &--primaryColor {
     color: $primary-color !important;
