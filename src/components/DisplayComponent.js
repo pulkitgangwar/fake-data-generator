@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
-const DisplayComponent = ({ title, fakerFunction }) => {
+const DisplayComponent = ({ fakerFunction, title }) => {
   const [random, setRandom] = useState("");
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <button onClick={() => setRandom(fakerFunction())}>
-        Generate {title}
+    <div className="displaysection__displaycomponent">
+      <button
+        className="btn btn--primary"
+        onClick={() => setRandom(fakerFunction())}
+      >
+        Generate
       </button>
-      <h1>{random ? random : null}</h1>
+      <div className="displaysection__result-container">
+        <p className="paragraph-primary displaysection__result-container--heading">
+          {random ? random : title}
+        </p>
+      </div>
     </div>
   );
 };

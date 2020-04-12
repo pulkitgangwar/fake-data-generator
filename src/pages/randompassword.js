@@ -2,12 +2,14 @@ import faker from "faker";
 
 // importing components
 import DisplayComponent from "../components/DisplayComponent";
+import DisplaySection from "../HTML/DisplaySection";
 
 const RandomPassword = () => {
   faker.seed(123);
   return (
-    <DisplayComponent
-      title="random Password"
+    <DisplaySection
+      title="Generate Random"
+      primaryText="Password"
       fakerFunction={faker.internet.password}
     />
   );
