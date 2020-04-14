@@ -5,7 +5,7 @@ const Form = ({ getFakeData }) => {
 
   const runFakeData = (e) => {
     e.preventDefault();
-    getFakeData(e, count);
+    getFakeData(count);
     console.log("running");
   };
 

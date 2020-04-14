@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Head from "next/head";
 
 // importing components
-import Navigation from "../HTML/Navigation";
-import Hamburger from "../HTML/Hamburger";
+import Navigation from "../html/Navigation";
+import Hamburger from "../html/Hamburger";
 
 // importing stylesheet
 import "../sass/main.scss";

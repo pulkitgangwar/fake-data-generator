@@ -1,31 +1,29 @@
 import React, { useState } from "react";
 
 // importing Components
-import FakeProfileData from "../HTML/FakeProfileData";
-import FakeData from "../HTML/FakeData";
+import FakeProfileData from "../html/FakeProfileData";
+import DisplayFakeData from "../components/DisplayFakeData";
 
 const Fake = () => {
   const [fakeDataCount, setFakeDataCount] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
 
-  const getFakeData = (e, count) => {
+  const getFakeData = (count) => {
     try {
-      e.preventDefault();
-      setLoading(true);
-
       setFakeDataCount(Array.from({ length: count }));
-      setLoading(false);
     } catch (err) {
-      setError(true);
-      setLoading(false);
-      setFakeDataCount([]);
+      console.log(err);
     }
   };
   return (
     <div>
       <FakeProfileData getFakeData={getFakeData} />
-      <FakeData loading={loading} error={error} fakeDataCount={fakeDataCount} />
+      <div className="fakedata">
+        {fakeDataCount.length
+          ? fakeDataCount.map((singleFakeData, index) => (
+              <DisplayFakeData key={`${Math.random()}-${index}`} />
+            ))
+          : null}
+      </div>
     </div>
   );
 };

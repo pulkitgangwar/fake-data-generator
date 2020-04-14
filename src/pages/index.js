@@ -1,5 +1,5 @@
-// importing HTML Components
-import Header from "../HTML/Header";
+// importing html Components
+import Header from "../html/Header";
 
 const Index = () => {
   return (

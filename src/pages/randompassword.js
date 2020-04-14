@@ -2,7 +2,7 @@ import faker from "faker";
 
 // importing components
 import DisplayComponent from "../components/DisplayComponent";
-import DisplaySection from "../HTML/DisplaySection";
+import DisplaySection from "../html/DisplaySection";
 
 const RandomPassword = () => {
   faker.seed(123);

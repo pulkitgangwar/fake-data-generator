@@ -8,7 +8,6 @@ const DisplayFakeData = () => {
       <p>Email : {faker.internet.email()}</p>
       <p>Username : {faker.internet.userName()}</p>
       <p>Password : {faker.internet.password()}</p>
-   
     </div>
   );
 };
