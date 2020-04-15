@@ -1,10 +1,10 @@
 // importing html Components
-import Header from "../html/Header";
+import Hero from "../components/Hero";
 
 const Index = () => {
   return (
     <div>
-      <Header />
+      <Hero />
     </div>
   );
 };

@@ -4,14 +4,18 @@ import React, { useState } from "react";
 import Head from "next/head";
 
 // importing components
-import Navigation from "../html/Navigation";
-import Hamburger from "../html/Hamburger";
+import Navigation from "../components/Navigation";
+import Hamburger from "../components/Hamburger";
 
 // importing stylesheet
 import "../sass/main.scss";
 
 function MyApp({ Component, pageProps }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  console.log(
+    "%cYou Can Use It For Scraping Purpose",
+    "color:green;font-size:30px"
+  );
   return (
     <div>
       <Head>

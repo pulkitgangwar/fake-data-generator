@@ -1,8 +1,7 @@
 import faker from "faker";
 
 // importing components;
-import DisplayComponent from "../components/DisplayComponent";
-import DisplaySection from "../html/DisplaySection";
+import DisplaySection from "../components/DisplaySection";
 
 const RandomEmail = () => {
   return (

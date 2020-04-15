@@ -1,4 +1,4 @@
-const Header = () => {
+const Hero = () => {
   return (
     <header className="header">
       <p className="paragraph-primary paragraph-primary--primaryColor">
@@ -15,10 +15,10 @@ const Header = () => {
         <br /> You Can Create Thousands Of User Profile For Testing Purpose
       </p>
       <div className="header__btn--wrapper">
-      <button className="btn btn--primary">Generate Fake Data </button>
+        <button className="btn btn--primary">Generate Fake Data </button>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default Hero;
